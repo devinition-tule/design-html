@@ -39,5 +39,3 @@ workflows:
           requires:
             - Hello-World
       - Using-Node:
-          requires:
-            - Fetch-Code
