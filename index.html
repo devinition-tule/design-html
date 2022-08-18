@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Design</title>
+</head>
+<style type="text/css">
+	* {
+		padding: 0;
+		margin: 0;
+	}
+	a {
+		text-decoration: none;
+		color: #000;
+		padding: 5px;
+	}
+	.wrap-header {
+		background-color: yellow;
+	}
+	.flex-container-full {}
+	.flex-container {
+		max-width: 1200px;
+		width: 100%;
+		margin: auto;
+		padding: 0 10px;
+	}
+	.flex-row {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		overflow: hidden;
+		width: 100%;
+	}
+	.flex-row.center {
+		justify-content: center;
+	}
+	.menu-main, ul {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		list-style: none;
+	}
+	.menu-main li a{
+		vertical-align: middle;
+	}
+	.menu-main li a i img {
+	    height: 20px;
+		vertical-align: middle;
+	}
+	.menu-main li {
+		cursor: pointer;
+		padding: 10px;
+		transition: transform 0.5s;
+	}
+	.menu-main li:hover {
+		-ms-transform: scale(1.1); /* IE 9 */
+		-webkit-transform: scale(1.1); /* Safari 3-8 */
+		transform: scale(1.1);
+	}
+	.menu-main .haslist {
+		position: relative;
+	}
+	.menu-main .haslist > ul {
+		display: none;
+		position: absolute;
+		left: 0;
+		top: 38px;
+		background-color: white;
+		min-width: 200px;
+	}
+	.menu-main .haslist > ul:before {
+		content: '';
+		width: 0;
+		height: 0;
+		position: absolute;
+		bottom: 100%;
+		left: 40px;
+		border-bottom: 10px solid #d9d9d9;
+		border-left: 10px solid transparent;
+		border-right: 10px solid transparent;
+		border-bottom-color: #fff;
+	}
+	.menu-main .haslist:hover ul {
+		display: block;
+	}
+	.sale-off {
+		flex-grow: 1;
+		border-radius: 12px;
+		background-color: yellow;
+		margin: 20px 20px 20px 0;
+		text-align: center;
+		padding: 15px 0;
+	}
+	.sale-off:last-child {
+		margin-right: 0;
+	}
+	.sale-off a {
+		display: block;
+		overflow: hidden;
+	}
+	.sale-off img {
+		height: 70px;
+		vertical-align: middle;
+	}
+	.sale-off span {
+		vertical-align: middle;
+		display: inline-block;
+		line-height: 28px;
+		font-size: 22px;
+		text-align: left;
+	}
+</style>
+<body>
+	<div class="wrap-header">
+		<div class="flex-container-full">
+			<div class="flex-row center">
+				<a href="index.html" title="Banner top">
+					<img src="https://cdn.tgdd.vn/2022/08/banner/1200-44-1200x44-8.png" alt="" title="" />
+				</a>
+			</div>
+		</div>
+		<div class="flex-container-full">
+				<div class="flex-container">
+					<ul class="menu-main">
+						<li><a href="#"><i><img src="https://cdn.tgdd.vn//content/icon-phone-96x96-1.png"></i>Điện thoại</a></li>
+						<li><a href="#"><i><img src="https://cdn.tgdd.vn//content/icon-laptop-96x96-1.png"></i>Laptop</a></li>
+						<li><a href="#"><i><img src="https://cdn.tgdd.vn//content/icon-tablet-96x96-1.png"></i>Tablet</a></li>
+						<li class="haslist"><a href="#"><i><img src="https://cdn.tgdd.vn//content/icon-phu-kien-96x96-1.png"></i>Phụ kiện</a>
+							<ul>
+								<li class="menu-sub"><a href="#">Phụ kiện di động</a>
+									<ul>
+										<li><a href="#">Sạc dự phòng</a></li>
+										<li><a href="#">Ốp lưng điện thoại</a></li>
+										<li><a href="#">Ốp lưng máy tính bảng</a></li>
+									</ul>
+								</li>
+								<li class="menu-sub"><a href="#">Phụ kiện laptop</a>
+									<ul>
+										<li><a href="#">Chuột, bàn phím</a></li>
+										<li><a href="#">Balo, túi chống sốc</a></li>
+										<li><a href="#">Giá đỡ laptop</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li><a href="#"><i><img src="https://cdn.tgdd.vn//content/icon-smartwatch-96x96-1.png"></i>Smartwatch</a></li>
+						<li><a href="#"><i><img src="https://cdn.tgdd.vn//content/watch-icon-96x96.png"></i>Đồng hồ</a></li>
+					</ul>
+				</div>
+		</div>
+		<div class="flex-container-full">
+			<div class="flex-row center">
+				<a href="index.html" title="Banner below">
+					<img src="https://cdn.tgdd.vn/2022/08/banner/Banner-Big-1920x450-1920x450.jpg" alt="" title="" />
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class="wrap-content">
+		<div class="flex-container">
+			<div class="flex-row">
+				<div class="sale-off">
+					<a href="">
+						<img src="https://cdn.tgdd.vn//content/icon--96x104-2.png" title="" alt="">
+						<span>Chỉ giảm online</span>
+					</a>
+				</div>
+				<div class="sale-off">
+					<a href="">
+						<img src="https://cdn.tgdd.vn//content/LDP---Icon-Desk-61x60.png" title="" alt="">
+						<span>Đồng giá từ 99K</span>
+					</a>
+				</div>
+				<div class="sale-off">
+					<a href="">
+						<img src="https://cdn.tgdd.vn//content/100x100-101x101.png" title="" alt="">
+						<span>Ngày đẹp<br />Giảm đến 50%</span>
+					</a>
+				</div>
+				<div class="sale-off">
+					<a href="">
+						<img src="https://cdn.tgdd.vn//content/b2s-120x120.png" title="" alt="">
+						<span>Đổi điểm<br />Giảm đến 3tr</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
